@@ -1,0 +1,59 @@
+<html theme="light">
+
+<head>
+    <meta charset="utf-8">
+    <link href="../src/css/style.css" rel="stylesheet">
+    <script src="../src/js/fluent.js"></script>
+</head>
+
+<body>
+    <h1>Welcome to Fluent-Web!</h1>
+
+    <button class="primary compact"
+        onclick="Appearance.setTheme(Appearance.getTheme()=='dark'?'light':'dark')">🌆ChangeTheme</button>
+    <button class="subtle compact"
+        onclick="window.open('https://github.com/dilemmagx/Fluent-Web/')">🏗️Repository</button>
+    <button class="subtle compact"
+        onclick="window.open('https://react.fluentui.dev/?path=/docs/concepts-introduction--page')">✨Fluent UI
+        React</button>
+    <button class="subtle compact"
+        onclick="window.open('https://www.figma.com/community/file/1159947337437047524')">🎨WinUI 3</button>
+
+    <h3>Buttons</h3>
+
+    <h4>Regular</h4>
+
+    <p>Regular buttons acts just like any other buttons, but have a minimal width of 100px. It is also the default
+        button type of this collection.</p>
+
+    <button class="primary">primary</button>
+    <button class="secondary">secondary</button>
+    <button class="subtle">subtle</button><br>
+    <button class="primary" disabled>primary</button>
+    <button class="secondary" disabled>secondary</button>
+    <button class="subtle" disabled>subtle</button>
+
+    <h4>Compact</h4>
+
+    <p>Compact buttons acts just like any other buttons, but with only necessary paddings, which means there are no
+        minimal width. To activate compact mod, simply add "compact" into the class list.</p>
+
+    <button class="primary compact">primary</button>
+    <button class="secondary compact">secondary</button>
+    <button class="subtle compact">subtle</button><br>
+    <button class="primary compact" disabled>primary</button>
+    <button class="secondary compact" disabled>secondary</button>
+    <button class="subtle compact" disabled>subtle</button>
+
+    <h3>Hyperlinks</h3>
+
+    <a href="https://github.com/dilemmagx">DilemmaGX @ Github</a>
+    <a href="https://github.com/dilemmagx" class="disabled">DilemmaGX @ Github</a>
+
+    <h3>Textbox</h3>
+
+    <input type="text" placeholder="Enter Text">
+
+</body>
+
+</html>

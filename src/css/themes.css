@@ -1,0 +1,94 @@
+:root {
+    --bg-color: rgba(255, 255, 255, 1);
+
+    --default-text: rgba(6,6,6,1);
+
+    --primary-rest-fill: rgba(0, 95, 184, 1);
+    --primary-hover-fill: rgba(0, 95, 184, 0.9);
+    --primary-active-fill: rgba(0, 95, 184, 0.8);
+    --primary-disabled-fill: rgba(0, 0, 0, 0.2169);
+    --primary-light-border: rgba(0, 0, 0, 0.05);
+    --primary-bottom-border: rgba(0, 0, 0, 0.4);
+    --primary-disabled-text: rgba(255, 255, 255, 0.7);
+    --primary-text: rgba(255, 255, 255, 1);
+
+    --secondary-rest-fill: rgba(255, 255, 255, 0.7);
+    --secondary-hover-fill: rgba(249, 249, 249, 0.5);
+    --secondary-active-fill: rgba(249, 249, 249, 0.3);
+    --secondary-disabled-fill: rgba(249, 249, 249, 0.3);
+    --secondary-light-border: rgba(0, 0, 0, 0.05);
+    --secondary-bottom-border: rgba(0, 0, 0, 0.1622);
+    --secondary-disabled-text: rgba(0, 0, 0, 0.3614);
+    --secondary-text: rgba(0, 0, 0, 0.8956);
+
+    --subtle-rest-fill: rgba(0, 0, 0, 0);
+    --subtle-hover-fill: rgba(0, 0, 0, 0.0373);
+    --subtle-active-fill: rgba(0, 0, 0, 0.0241);
+    --subtle-disabled-fill: rgba(0, 0, 0, 0);
+    --subtle-disabled-text: rgba(0, 0, 0, 0.3614);
+    --subtle-text: rgba(0, 0, 0, 0.8956);
+
+    --hyperlink-rest-text: rgba(0, 62, 146, 1);
+    --hyperlink-hover-text: rgba(0, 26, 104, 1);
+    --hyperlink-active-text: rgba(0, 95, 184, 1);
+    --hyperlink-disabled-text: rgba(0, 0, 0, 0.3614);
+
+    --textbox-rest-fill: rgba(255,255,255,0.7);
+    --textbox-hover-fill: rgba(249,249,249,0.5);
+    --textbox-light-border: rgba(0, 0, 0, 0.05);
+    --textbox-bottom-border: rgba(0, 0, 0, 0.1622);
+    --textbox-bottom-border-focused: rgba(0, 95, 184, 1);
+    --textbox-disabled-fill: rgba(249, 249, 249, 0.3);
+    --textbox-disabled-text: rgba(0,0,0,0.3614);
+    --textbox-input-text: rgba(0,0,0,0.8956);
+
+    --checkbox-off-outline: rgba(0,0,0,0.6);
+    --checkbox-off-fill: rgba(0,0,0,0.0241);
+    --checkbox-on-outline: rgba(0,95,184,1);
+    --checkbox-on-fill: rgba(0,95,184,1);
+}
+
+:root[theme="dark"] {
+    --bg-color: rgba(0, 0, 0, 0.8956);
+
+    --default-text: rgba(249,249,249,1);
+
+    --primary-rest-fill: rgba(96, 205, 255, 1);
+    --primary-hover-fill: rgba(96, 205, 255, 0.9);
+    --primary-active-fill: rgba(96, 205, 255, 0.8);
+    --primary-disabled-fill: rgba(255, 255, 255, 0.1581);
+    --primary-light-border: rgba(255, 255, 255, 0.08);
+    --primary-bottom-border: rgba(0, 0, 0, 0.14);
+    --primary-disabled-text: rgba(255, 255, 255, 0.5302);
+    --primary-text: rgba(0, 0, 0, 1);
+
+    --secondary-rest-fill: rgba(255, 255, 255, 0.0605);
+    --secondary-hover-fill: rgba(255, 255, 255, 0.0837);
+    --secondary-active-fill: rgba(255, 255, 255, 0.0698);
+    --secondary-disabled-fill: rgba(255, 255, 255, 0.0419);
+    --secondary-light-border: rgba(0, 0, 0, 0.05);
+    --secondary-bottom-border: rgba(0, 0, 0, 0.1622);
+    --secondary-disabled-text: rgba(255, 255, 255, 0.3628);
+    --secondary-text: rgba(255, 255, 255, 1);
+
+    --subtle-rest-fill: rgba(0, 0, 0, 0);
+    --subtle-hover-fill: rgba(255, 255, 255, 0.0605);
+    --subtle-active-fill: rgba(255, 255, 255, 0.0419);
+    --subtle-disabled-fill: rgba(0, 0, 0, 0);
+    --subtle-disabled-text: rgba(255, 255, 255, 0.3628);
+    --subtle-text: rgba(255, 255, 255, 1);
+
+    --hyperlink-rest-text: rgba(153, 235, 255, 1);
+    --hyperlink-hover-text: rgba(153, 235, 255, 1);
+    --hyperlink-active-text: rgba(96, 205, 255, 1);
+    --hyperlink-disabled-text: rgba(255, 255, 255, 0.3628);
+    
+    --textbox-rest-fill: rgba(255,255,255,0.06);
+    --textbox-hover-fill: rgba(255,255,255,0.0837);
+    --textbox-light-border: rgba(255,255,255,0.08);
+    --textbox-bottom-border: rgba(255,255,255, 0.54);
+    --textbox-bottom-border-focused: rgba(96, 205, 255, 1);
+    --textbox-disabled-fill: rgba(255, 255, 255, 0.0419);
+    --textbox-disabled-text: rgba(255,255,255,0.3628);
+    --textbox-input-text: rgba(255,255,255,1);
+}
