@@ -25,6 +25,13 @@ p {
     padding: 5px;
 }
 
+strong {
+    color: var(--accent);
+    &[appearance="primary"]{
+        color: var(--text-reversed);
+    }
+}
+
 @keyframes clip-out {
     from {
         clip-path: circle(0% at var(--cache-x) var(--cache-y));
