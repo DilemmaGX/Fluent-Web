@@ -1,0 +1,31 @@
+<html theme="light">
+
+<head>
+    <link href="../src/css/fluentweb.css" rel="stylesheet">
+    <script src="../src/js/FluentWeb.js"></script>
+</head>
+
+<body onload="Action.setZoom(1.5)">
+    <h1>Welcome to Fluent-Web v2</h1>
+    <fl-card>
+        <fl-text placeholder="Enter username"></fl-text>
+        <fl-text password placeholder="Enter password" id="pwd"></fl-text>
+        <fl-tooltip text="See password">
+            <fl-button appearance="primary" text="🙈"
+                @click="Action.togglePassword('pwd'); Action.setAttribute('see', 'text', Action.hasAttribute('pwd','password') ? '🙈' : '🙉')"
+                id="see" compact></fl-button>
+        </fl-tooltip>
+        <fl-tooltip text="Lock password">
+            <fl-button appearance="secondary" text="🔓"
+                @click="Action.toggleDisabled('pwd'); Action.setAttribute('lock', 'text', Action.hasAttribute('pwd','disabled') ? '🔒' : '🔓')"
+                id="lock" compact></fl-button>
+        </fl-tooltip>
+        <fl-tooltip text="Toggle theme">
+            <fl-button appearance="subtle" text="🌞"
+                @click="Action.toggleThemeWithTransition('light','dark');Action.setAttribute('theme', 'text', Appearance.getTheme() == 'dark' ? '🌞' : '🌚')"
+                id="theme" compact></fl-button>
+        </fl-tooltip>
+    </fl-card>
+</body>
+
+</html>

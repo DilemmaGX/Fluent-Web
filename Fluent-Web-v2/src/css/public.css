@@ -1,0 +1,46 @@
+:root {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    color-scheme: var(--color-scheme);
+    font-family: 'Segoe UI';
+    --mouse-x: 0;
+    --mouse-y: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    transition: ease 200ms;
+    margin: 25px 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 5px;
+}
+
+@keyframes clip-out {
+    from {
+        clip-path: circle(0% at var(--cache-x) var(--cache-y));
+    }
+
+    to {
+        clip-path: circle(125% at var(--cache-x) var(--cache-y));
+    }
+}
+
+::view-transition-old(*) {
+    animation: none;
+    mix-blend-mode: normal;
+}
+
+::view-transition-new(*) {
+    mix-blend-mode: normal;
+    animation: clip-out 300ms ease-out;
+}

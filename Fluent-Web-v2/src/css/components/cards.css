@@ -1,0 +1,15 @@
+fl-card{
+    float: left;
+    min-width: 64px;
+    min-height: 32px;
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: var(--default);
+    border: 1px solid color-mix(in srgb, var(--default) 90%, var(--filter));
+    border-radius: 4px;
+    transition: 200ms ease;
+
+    &[dynamic]:hover{
+        border: 1px solid var(--accent);
+    }
+}

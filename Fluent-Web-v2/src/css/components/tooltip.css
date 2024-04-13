@@ -1,0 +1,34 @@
+fl-tooltip {
+    position: relative;
+    float: left;
+}
+
+fl-tooltip[text]:after {
+    content: attr(text);
+    font-size: 12px;
+    visibility: hidden;
+    position: fixed;
+    transition: opacity ease 200ms;
+    opacity: 0;
+    white-space: pre;
+    padding: 5px;
+    background-color: var(--default);
+    color: var(--text);
+    border: 1px solid color-mix(in srgb, var(--default) 90%, var(--filter));
+    border-radius: 4px;
+
+    z-index: 999;
+    top: calc(var(--mouse-y) + 5px);
+    left: calc(var(--mouse-x) + 15px);
+}
+
+fl-tooltip:hover:after {
+    opacity: 1;
+    transition: opacity ease 200ms;
+    visibility: visible;
+    display: block;
+
+    z-index: 999;
+    top: calc(var(--mouse-y) + 5px);
+    left: calc(var(--mouse-x) + 15px);
+}

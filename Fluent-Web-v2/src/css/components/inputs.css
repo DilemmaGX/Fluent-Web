@@ -1,0 +1,53 @@
+fl-text {
+    float: left;
+    position: relative;
+}
+
+fl-text input {
+    margin: 5px;
+    padding: 5px;
+    border-radius: 4px;
+    outline: none;
+    min-height: 32px;
+    min-width: 32px;
+    background-color: var(--default);
+    border: 1px solid color-mix(in srgb, var(--default) 90%, var(--filter));
+    border-bottom: 1.5px solid color-mix(in srgb, var(--default) 80%, var(--filter));
+    color: var(--text);
+    transition: ease 200ms;
+
+    &:focus {
+        border: 1px solid color-mix(in srgb, var(--default) 80%, var(--filter));
+        border-bottom: 1.5px solid color-mix(in srgb, var(--default) 80%, var(--filter));
+    }
+
+    &:disabled {
+        border: 1px solid color-mix(in srgb, var(--default) 90%, var(--filter));
+        border-bottom: 1.5px solid color-mix(in srgb, var(--default) 90%, var(--filter));
+        color: var(--text-disabled);
+
+        &::placeholder {
+            color: var(--text-disabled)
+        }
+
+        cursor: not-allowed;
+    }
+}
+
+fl-text input~span {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    width: 0;
+    height: 1.5px;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0) 49%, var(--accent) 50%, rgba(0, 0, 0, 0) 51%);
+    transition: ease 200ms;
+    border-radius: 1px;
+}
+
+fl-text input:focus~span {
+    width: calc(100% - 18px);
+    left: 9px;
+    transition: ease 200ms;
+    background: var(--accent);
+}

@@ -1,0 +1,20 @@
+:root {
+    --color-scheme: light;
+    --bg-color: rgba(249, 249, 249, 1);
+
+    --filter: rgb(0, 0, 0);
+    --filter-reversed: rgb(255, 255, 255);
+
+    --text: rgba(0, 0, 0, 0.8956);
+    --text-disabled: rgba(0, 0, 0, 0.3614);
+    --text-reversed: rgba(255, 255, 255, 1);
+
+    --accent: rgba(0, 95, 184, 1);
+    --accent-disabled: rgba(0, 0, 0, 0.2169);
+
+    --default: color(srgb 0.992941 0.992941 0.992941);
+    --default-disabled: rgba(249, 249, 249, 0.3);
+
+    --subtle: rgba(255, 255, 255, 0);
+    --subtle-disabled: rgba(0, 0, 0, 0);
+}

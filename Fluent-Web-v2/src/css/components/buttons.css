@@ -1,0 +1,127 @@
+fl-button button {
+    float: left;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px 15px;
+    transition: ease 200ms;
+    min-height: 32px;
+    min-width: 32px;
+    border-radius: 4px;
+    background-color: var(--default);
+    border: 1px solid color-mix(in srgb, var(--default) 90%, var(--filter));
+    border-bottom: 1.5px solid color-mix(in srgb, var(--default) 80%, var(--filter));
+    color: var(--text);
+
+    &:hover {
+        background-color: color-mix(in srgb, var(--default) 90%, var(--filter));
+        color: color-mix(in srgb, var(--text) 90%, var(--filter-reversed));
+        border: 1px solid color-mix(in srgb, var(--default) 90%, var(--filter));
+        border-bottom: 1.5px solid color-mix(in srgb, var(--default) 80%, var(--filter));
+    }
+
+    &:active {
+        background-color: color-mix(in srgb, var(--default) 80%, var(--filter));
+        color: color-mix(in srgb, var(--text) 80%, var(--filter-reversed));
+        border: 1px solid color-mix(in srgb, var(--default) 80%, var(--filter));
+        border-bottom: 1.5px solid color-mix(in srgb, var(--default) 80%, var(--filter));
+    }
+
+    &:disabled {
+        background-color: var(--default-disabled);
+        color: var(--text-disabled);
+        border: 1px solid color-mix(in srgb, var(--default) 90%, var(--filter));
+        border-bottom: 1.5px solid color-mix(in srgb, var(--default) 80%, var(--filter));
+        cursor: not-allowed;
+    }
+
+    &[appearance="primary"] {
+        background-color: var(--accent);
+        border: 1px solid color-mix(in srgb, var(--accent) 90%, var(--filter-reversed));
+        border-bottom: 1.5px solid color-mix(in srgb, var(--accent) 80%, var(--filter-reversed));
+        color: var(--text-reversed);
+
+        &:hover {
+            background-color: color-mix(in srgb, var(--accent) 90%, var(--filter-reversed));
+            color: color-mix(in srgb, var(--text-reversed) 90%, var(--filter));
+            border: 1px solid color-mix(in srgb, var(--accent) 90%, var(--filter-reversed));
+            border-bottom: 1.5px solid color-mix(in srgb, var(--accent) 80%, var(--filter-reversed));
+        }
+
+        &:active {
+            background-color: color-mix(in srgb, var(--accent) 80%, var(--filter-reversed));
+            color: color-mix(in srgb, var(--text-reversed) 80%, var(--filter));
+            border: 1px solid color-mix(in srgb, var(--accent) 80%, var(--filter-reversed));
+            border-bottom: 1.5px solid color-mix(in srgb, var(--accent) 80%, var(--filter-reversed));
+        }
+
+        &:disabled {
+            background-color: var(--accent-disabled);
+            color: var(--text-disabled);
+            border: 1px solid color-mix(in srgb, var(--accent-disabled) 90%, var(--filter));
+            border-bottom: 1.5px solid color-mix(in srgb, var(--accent-disabled) 80%, var(--filter));
+            cursor: not-allowed;
+        }
+    }
+
+    &[appearance="secondary"] {
+        background-color: var(--default);
+        border: 1px solid color-mix(in srgb, var(--default) 90%, var(--filter));
+        border-bottom: 1.5px solid color-mix(in srgb, var(--default) 80%, var(--filter));
+        color: var(--text);
+
+        &:hover {
+            background-color: color-mix(in srgb, var(--default) 90%, var(--filter));
+            color: color-mix(in srgb, var(--text) 90%, var(--filter-reversed));
+            border: 1px solid color-mix(in srgb, var(--default) 90%, var(--filter));
+            border-bottom: 1.5px solid color-mix(in srgb, var(--default) 80%, var(--filter));
+        }
+
+        &:active {
+            background-color: color-mix(in srgb, var(--default) 80%, var(--filter));
+            color: color-mix(in srgb, var(--text) 80%, var(--filter-reversed));
+            border: 1px solid color-mix(in srgb, var(--default) 80%, var(--filter));
+            border-bottom: 1.5px solid color-mix(in srgb, var(--default) 80%, var(--filter));
+        }
+
+        &:disabled {
+            background-color: var(--default-disabled);
+            color: var(--text-disabled);
+            border: 1px solid color-mix(in srgb, var(--default) 90%, var(--filter));
+            border-bottom: 1.5px solid color-mix(in srgb, var(--default) 80%, var(--filter));
+            cursor: not-allowed;
+        }
+    }
+
+    &[appearance="subtle"] {
+        background-color: var(--subtle);
+        border: 1px solid var(--subtle);
+        border-bottom: 1.5px solid var(--subtle);
+        color: var(--text);
+
+        &:hover {
+            background-color: color-mix(in srgb, var(--subtle) 90%, var(--filter));
+            color: color-mix(in srgb, var(--text) 90%, var(--filter-reversed));
+            border: 1px solid var(--subtle);
+            border-bottom: 1.5px solid var(--subtle);
+        }
+
+        &:active {
+            background-color: color-mix(in srgb, var(--subtle) 80%, var(--filter));
+            color: color-mix(in srgb, var(--text) 80%, var(--filter-reversed));
+            border: 1px solid var(--subtle);
+            border-bottom: 1.5px solid var(--subtle);
+        }
+
+        &:disabled {
+            background-color: var(--subtle-disabled);
+            color: var(--text-disabled);
+            border: 1px solid color-mix(in srgb, var(--subtle) 90%, var(--filter));
+            border-bottom: 1.5px solid color-mix(in srgb, var(--subtle) 80%, var(--filter));
+            cursor: not-allowed;
+        }
+    }
+
+    &[compact] {
+        padding: 5px;
+    }
+}
