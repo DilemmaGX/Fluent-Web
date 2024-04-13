@@ -2,4 +2,4 @@
 
 Fluent-Web is a collection of `.css` and `.js` that aims to create Fluent-designed html files or web apps without involving react. It's fast to learn and easy to use.
 
-Further development is still in progress, Documentations please visit [the demo page](https://DilemmaGX.github.io/Fluent-Web/Fluent-Web-v2/demo).
+Further development is still in progress, Documentations please visit [the demo page](https://DilemmaGX.github.io/Fluent-Web/Fluent-Web-v1/demo).
